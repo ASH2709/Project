@@ -1,0 +1,30 @@
+####################install ansible#############
+  501  vagrant init marcoalteri/ubuntu-desktop-16.04-64bit
+  502  vagrant up
+  503  vagrant ssh
+  509  history
+
+[vagrant@localhost ~]$ history
+   
+    1  sudo apt-get -y install ansible
+    2  ansible --version
+    3  history
+
+
+
+
+22222222############accesss other machine########
+    4  sudo nano /etc/ansible/hosts
+		192.168.33.20	test1
+		192.168.33.30	test2
+    5  sudo vi /etc/ansible/hosts
+		[test]
+		test1
+		[test]
+		test2
+    6  ssh-keygen
+    7 ssh-copy-id vagrant@test1
+    8   ssh-copy-id vagrant@test2 
+    9  ssh test1
+   10  ssh test2					
+12  ansible-playbook -s test.yml
