@@ -1,0 +1,5 @@
+	wget http://ftp-nyc.osuosl.org/pub/jenkins/war/latest/jenkins.war
+      cp jenkins.war /vagrant/
+      mv jenkins.war /opt/tomcat/webapps/
+cat /home/ubuntu/.jenkins/secrets/initialAdminPassword n Dawson 10/13/2018 03:00 AM
+330d72c7afc54abeb8e8a3c97a31966f Jenkins
